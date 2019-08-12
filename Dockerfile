@@ -14,8 +14,6 @@ RUN mkdir /var/opt/mssql && \
     chown -R dbuser:dbgroup /var/opt/mssql && \
     chmod -R 770 /var/opt/mssql
 
-RUN mkdir /scripts
-
 EXPOSE 1433
 
 USER ${RUN_USER}:${RUN_GROUP}
